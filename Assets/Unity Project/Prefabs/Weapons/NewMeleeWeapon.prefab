@@ -60,7 +60,7 @@ MonoBehaviour:
   AutoDestroyWhenEmpty: 0
   AutoDestroyWhenEmptyDelay: 1
   CurrentAmmoLoaded: 0
-  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
+  WeaponAttachmentOffset: {x: 0.45, y: 0, z: 0}
   FlipWeaponOnCharacterFlip: 1
   FlipValue: {x: -1, y: 1, z: 1}
   LeftHandHandle: {fileID: 0}
@@ -77,7 +77,7 @@ MonoBehaviour:
   Animators: []
   EquippedAnimationParameter: 
   IdleAnimationParameter: 
-  StartAnimationParameter: 
+  StartAnimationParameter: RectangleMeleeAttackStart
   DelayBeforeUseAnimationParameter: 
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
@@ -136,13 +136,13 @@ MonoBehaviour:
   MeleeDamageAreaMode: 0
   DamageAreaShape: 0
   AreaSize: {x: 0.5, y: 0.5}
-  AreaOffset: {x: 0.75, y: 0}
+  AreaOffset: {x: 0.25, y: 0}
   ExistingDamageArea: {fileID: 0}
   InitialDelay: 0
-  ActiveDuration: 1
+  ActiveDuration: 0.45
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8448
   MinDamageCaused: 10
   MaxDamageCaused: 0
   Knockback: 0
