@@ -15,11 +15,6 @@ public class EnemyAmbushZoneLock : MonoBehaviour
     public bool PlayerInZone { get => m_PlayerInZone; }
 
     [SerializeField]
-    private bool m_CameraInZone;
-
-    public bool CameraInZone { get => m_CameraInZone; }
-
-    [SerializeField]
     private bool m_LockIsActive = false;
 
     public bool LockIsActive { get => m_LockIsActive; }
@@ -75,7 +70,7 @@ public class EnemyAmbushZoneLock : MonoBehaviour
         m_CameraGO.transform.position = m_CinemachineCamera.transform.position;
 
         // Trigger EAZScript's functions.
-        m_AmbushZone.OnLockActivated();
+        m_AmbushZone.OnLockActivated(); // TODO: Via event perhaps?
     }
 
     /// <summary>
@@ -93,7 +88,6 @@ public class EnemyAmbushZoneLock : MonoBehaviour
         }
 
         // Release Camera
-        //m_CinemachineCamera.FollowsPlayer = true;
         m_CinemachineCamera.StartFollowing();
 
         m_LockIsActive = false;
@@ -115,6 +109,7 @@ public class EnemyAmbushZoneLock : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         // Only Update Relevant to Collision
+        if (m_AmbushZone.IsCompleted) return; // If this zone has been beaten, we don't care.
         if (m_LockIsActive) return; // We don't care if the lock is active
         if (!m_PlayerInZone) return; // We don't care if the player isn't in the zone
 
@@ -127,23 +122,6 @@ public class EnemyAmbushZoneLock : MonoBehaviour
         }
     }
 
-    //private void OnTriggerStay(Collider other)
-    //{
-    //    // Only Update Relevant to Collision
-    //    if (m_LockIsActive) return; // We don't care if the lock is active
-    //    if (!m_PlayerInZone || !m_CameraInZone) return; // We don't care if the player or camera isn't in the zone
-    //    if (GameObject.ReferenceEquals(other.gameObject, m_CameraGO))
-    //    {
-    //        // Check for camera position
-    //        Vector2 camPosition = new Vector2(m_CameraGO.transform.position.x, m_CameraGO.transform.position.y);
-    //        Vector2 thisPosition = new Vector2(transform.position.x, transform.position.y);
-    //        if (Vector2.Distance(camPosition, thisPosition) <= LOCK_CAMERA_DISTANCE)
-    //        {
-    //            ActivateLock();
-    //        }
-    //    }
-    //}
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -151,24 +129,5 @@ public class EnemyAmbushZoneLock : MonoBehaviour
             m_PlayerInZone = false;
             m_PlayerGO = null;
         }
-        //if (collision.gameObject.CompareTag("MainCamera"))
-        //{
-        //    m_CameraInZone = false;
-        //    m_CameraGO = null;
-        //}
     }
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.gameObject.CompareTag("Player"))
-    //    {
-    //        m_PlayerInZone = false;
-    //        m_PlayerGO = null;
-    //    }
-    //    if (other.gameObject.CompareTag("MainCamera"))
-    //    {
-    //        m_CameraInZone = false;
-    //        m_CameraGO = null;
-    //    }
-    //}
 }
