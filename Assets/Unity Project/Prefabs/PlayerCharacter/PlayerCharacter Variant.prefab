@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 119040, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
       propertyPath: m_Name
-      value: PlayerCharacter
+      value: PlayerCharacter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 425048, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
       propertyPath: m_RootOrder
@@ -54,6 +54,18 @@ PrefabInstance:
     - target: {fileID: 425048, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19839500, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19839500, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19950340, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000010795265024, guid: eaa0c32df7aae4121befb930bd401b9a,
         type: 3}
