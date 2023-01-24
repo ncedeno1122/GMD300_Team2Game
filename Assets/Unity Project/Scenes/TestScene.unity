@@ -124,6 +124,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &81872540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2247589741469979294, guid: 73dcf1d24d089014f9a1be335e5e24e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2247589740803265691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &144675934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,12 +568,47 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2247589740803265691}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 81872540}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b470d1b161b2454590386135b7fd64f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &675583777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81872540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d317597e2b47bcb4e80316f1b372d79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RollDuration: 0.35
+  RollSpeed: 2
+  BlockHorizontalInput: 1
+  PreventDamageCollisionsDuringRoll: 1
+  Aim:
+    AimControl: 2
+    RotationMode: 0
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  RollCooldown: 1
+  LimitedRolls: 0
+  SuccessiveRollsAmount: 1
+  SuccessiveRollsLeft: 1
+  SuccessiveRollsResetDuration: 2
 --- !u!1001 &704494586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1510,7 +1551,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2247589741477162708, guid: 73dcf1d24d089014f9a1be335e5e24e2,
+        type: 3}
+      propertyPath: NumberOfJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247589741477162708, guid: 73dcf1d24d089014f9a1be335e5e24e2,
+        type: 3}
+      propertyPath: JumpRestrictions
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2247589741477130116, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
+    - {fileID: 2247589741477127680, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
 --- !u!1001 &8040196612217246658
 PrefabInstance:
