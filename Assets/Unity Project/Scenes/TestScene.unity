@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d6d6b3eb9091a4eabb113c7a1d1fcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnParent: {fileID: 0}
+  SpawnParent: {fileID: 1433960274}
   EnemyTypes:
   - {fileID: 9033031467029826372, guid: 5a579ca7bf8592b41833ed446d3171e9, type: 3}
 --- !u!4 &420936718 stripped
