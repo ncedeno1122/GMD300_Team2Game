@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11431242, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+      propertyPath: NumberOfJumps
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 19839500, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
       value: 3
@@ -88,5 +92,48 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.2655078
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11462046, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+    - {fileID: 11463706, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+--- !u!1 &2247589741469979294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 119040, guid: eaa0c32df7aae4121befb930bd401b9a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2247589741469926302}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &725829321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589741469979294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d317597e2b47bcb4e80316f1b372d79b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  RollDuration: 0.35
+  RollSpeed: 1.5
+  BlockHorizontalInput: 1
+  PreventDamageCollisionsDuringRoll: 1
+  Aim:
+    AimControl: 2
+    RotationMode: 0
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  RollCooldown: 1
+  LimitedRolls: 0
+  SuccessiveRollsAmount: 1
+  SuccessiveRollsLeft: 1
+  SuccessiveRollsResetDuration: 2
