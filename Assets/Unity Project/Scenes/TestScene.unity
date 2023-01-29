@@ -2107,12 +2107,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2207899139653971870, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-        type: 3}
-      propertyPath: InitialWeapon
-      value: 
-      objectReference: {fileID: 4213818448148265750, guid: 40c2c63760d74bc4baf432ab8a540565,
-        type: 3}
+    - target: {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
+      propertyPath: RollSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
+      propertyPath: RollDuration
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2247589741469979294, guid: 73dcf1d24d089014f9a1be335e5e24e2,
         type: 3}
       propertyPath: m_Name
