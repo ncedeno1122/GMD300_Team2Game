@@ -3059,30 +3059,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1494325979}
     m_Modifications:
-    - target: {fileID: 3880067130650321498, guid: 22fbb5fa9109f7b4d92b9060a007c016,
-        type: 3}
-      propertyPath: m_EdgeRadius
-      value: 0.39
-      objectReference: {fileID: 0}
     - target: {fileID: 5961877528067906212, guid: 22fbb5fa9109f7b4d92b9060a007c016,
         type: 3}
       propertyPath: m_RootOrder
       value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5961877528067906212, guid: 22fbb5fa9109f7b4d92b9060a007c016,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.67296
-      objectReference: {fileID: 0}
-    - target: {fileID: 5961877528067906212, guid: 22fbb5fa9109f7b4d92b9060a007c016,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.67296
-      objectReference: {fileID: 0}
-    - target: {fileID: 5961877528067906212, guid: 22fbb5fa9109f7b4d92b9060a007c016,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.67296
       objectReference: {fileID: 0}
     - target: {fileID: 5961877528067906212, guid: 22fbb5fa9109f7b4d92b9060a007c016,
         type: 3}
