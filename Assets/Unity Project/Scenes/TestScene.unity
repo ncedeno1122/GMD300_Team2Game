@@ -842,7 +842,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2247589740803265691}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2247589740803265693}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b470d1b161b2454590386135b7fd64f, type: 3}
@@ -3001,6 +3001,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2247589740803265691}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2247589740803265693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2247589741469979294, guid: 73dcf1d24d089014f9a1be335e5e24e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2247589740803265691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2247589740803265694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589740803265693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2bb48ea7e7fc4c0fa43dce17235f4f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 01000000020000000400000005000000
+  BlockingConditionStates: 
+  BlockingWeaponStates: 04000000
+  DashDistance: 3
+  DashForce: 40
+  ResetForcesOnExit: 0
+  ForceExactDistance: 0
+  Aim:
+    AimControl: 2
+    RotationMode: 0
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  AutoCorrectTrajectory: 1
+  DashDirectionMinThreshold: 0.1
+  DashCooldown: 1
+  LimitedDashes: 0
+  SuccessiveDashAmount: 1
+  SuccessiveDashesLeft: 1
+  SuccessiveDashResetMethod: 0
+  SuccessiveDashResetDuration: 2
+  InvincibleWhileDashing: 0
 --- !u!1001 &3372441333301714007
 PrefabInstance:
   m_ObjectHideFlags: 0
