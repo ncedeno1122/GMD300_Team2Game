@@ -37973,7 +37973,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2247589740803265691}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247589740803265692}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b470d1b161b2454590386135b7fd64f, type: 3}
@@ -56142,6 +56142,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 122850, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_Name
+      value: StaminaBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 124254, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_Name
+      value: StaminaBarBackground
+      objectReference: {fileID: 0}
+    - target: {fileID: 162630, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
+      propertyPath: m_Name
+      value: StaminaBarFront
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ace2d4bf56f98df4196ff81845a465d7, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -61627,18 +61639,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
-      propertyPath: RollSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
-      propertyPath: RollDuration
-      value: 0.4
-      objectReference: {fileID: 0}
+    - target: {fileID: 2247589740803265694, guid: 73dcf1d24d089014f9a1be335e5e24e2,
+        type: 3}
+      propertyPath: StaminaBarUI
+      value: 
+      objectReference: {fileID: 927600373}
     - target: {fileID: 2247589741469979294, guid: 73dcf1d24d089014f9a1be335e5e24e2,
         type: 3}
       propertyPath: m_Name
@@ -61699,89 +61704,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2247589741477120476, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-        type: 3}
-      propertyPath: BlockingWeaponStates.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247589741477120476, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-        type: 3}
-      propertyPath: BlockingMovementStates.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247589741477120476, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-        type: 3}
-      propertyPath: BlockingConditionStates.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247589741477162708, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-        type: 3}
-      propertyPath: NumberOfJumps
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 725829321, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73dcf1d24d089014f9a1be335e5e24e2, type: 3}
---- !u!1 &2247589740803265692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2247589741469979294, guid: 73dcf1d24d089014f9a1be335e5e24e2,
-    type: 3}
-  m_PrefabInstance: {fileID: 2247589740803265691}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2247589740803265694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247589740803265692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d699983b7a1c5f44aabf3faa320fe09f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StaminaValue: 100
-  m_IsRegenerating: 0
-  StaminaRegenRate: 1
-  DebounceTime: 1.5
-  m_IsDebouncing: 0
-  StaminaBarUI: {fileID: 927600373}
---- !u!114 &2247589740803265720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247589740803265692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f362abafd010364a94a33a19d76e1d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  BlockingWeaponStates: 
-  RollDuration: 0.4
-  RollSpeed: 2
-  BlockHorizontalInput: 0
-  PreventDamageCollisionsDuringRoll: 0
-  Aim:
-    AimControl: 2
-    RotationMode: 0
-    MinimumAngle: -180
-    MaximumAngle: 180
-    CurrentAngle: 0
-  MinimumInputThreshold: 0.1
-  FlipCharacterIfNeeded: 1
-  RollCooldown: 1
-  LimitedRolls: 0
-  SuccessiveRollsAmount: 1
-  SuccessiveRollsLeft: 1
-  SuccessiveRollsResetDuration: 2
-  AbilityCost: 35
 --- !u!1001 &2780698921605062971
 PrefabInstance:
   m_ObjectHideFlags: 0
