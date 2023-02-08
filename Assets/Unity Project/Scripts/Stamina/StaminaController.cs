@@ -1,4 +1,6 @@
+using MoreMountains.Tools;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -6,22 +8,26 @@ using UnityEngine;
 /// </summary>
 public class StaminaController : MonoBehaviour
 {
+    // Base Data
     public const float MAX_STAMINA_VALUE = 100f;
-    private float m_StaminaValue = MAX_STAMINA_VALUE;
+    [SerializeField] private float m_StaminaValue = MAX_STAMINA_VALUE;
 
     public float CurrentStamina { get => m_StaminaValue; }
 
     // Regeneration
-    private bool m_IsRegenerating = false;
+    [SerializeField] private bool m_IsRegenerating = false;
 
     public bool IsRegenerating { get => m_IsRegenerating; }
 
     [SerializeField] private float StaminaRegenRate = 1f;
 
     // Regeneration DeBounce
-    [SerializeField] private float DebounceTime = 0.65f;
-    private bool m_IsDebouncing = false;
+    [SerializeField] private float DebounceTime = 1.5f;
+    [SerializeField] private bool m_IsDebouncing = false;
     private IEnumerator m_DebounceCRT;
+
+    // UI
+    public MMProgressBar StaminaBarUI;
 
     private void Start()
     {
@@ -46,6 +52,7 @@ public class StaminaController : MonoBehaviour
     {
         float deltaTimeHelper = 0f;
         m_IsDebouncing = true;
+        m_IsRegenerating = false;
 
         while (deltaTimeHelper <= time)
         {
@@ -54,6 +61,7 @@ public class StaminaController : MonoBehaviour
         }
 
         m_IsDebouncing = false;
+        m_IsRegenerating = true;
     }
 
     /// <summary>
@@ -64,7 +72,6 @@ public class StaminaController : MonoBehaviour
         // If Debounce CRT is running, 
         if (m_IsDebouncing == true)
         {
-            //StopAllCoroutines();
             StopCoroutine(m_DebounceCRT);
         }
 
@@ -93,9 +100,12 @@ public class StaminaController : MonoBehaviour
         if (!CanRemoveStaminaAmount(amountToRemove)) return;
 
         m_StaminaValue -= amountToRemove;
-
+        
         // Start debounce timer
         StartDebounceTimer();
+
+        // UI
+        UpdateUI();
     }
 
     /// <summary>
@@ -109,11 +119,24 @@ public class StaminaController : MonoBehaviour
         {
             m_StaminaValue = Mathf.Clamp(m_StaminaValue + StaminaRegenRate, 0f, MAX_STAMINA_VALUE);
             m_IsRegenerating = false;
+            UpdateUI();
         }
         else
         {
             m_StaminaValue += StaminaRegenRate;
             m_IsRegenerating = true;
+            UpdateUI();
+        }
+    }
+
+    /// <summary>
+    /// Updates a Stamina MMProgressBar
+    /// </summary>
+    public void UpdateUI()
+    {
+        if (StaminaBarUI != null)
+        {
+            StaminaBarUI.UpdateBar01(m_StaminaValue / 100f);
         }
     }
 }
