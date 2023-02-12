@@ -2,6 +2,7 @@ using MoreMountains.CorgiEngine;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Obsolete]
 public class StaminaInputListener : MonoBehaviour
 {
     private Dictionary<CharacterAbility, float> m_AbilityCosts = new Dictionary<CharacterAbility, float>();
