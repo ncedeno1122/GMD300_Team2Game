@@ -21,6 +21,9 @@ public class EnemyAmbushZoneLock : MonoBehaviour
 
     public const float LOCK_CAMERA_DISTANCE = 2f;
 
+    // TODO: maybe just make const floats, lol?
+    public Vector2 CAMERABOUNDS_WORLD { get => new Vector2((80f / 9f), 5f); }// Hardcoded Value for the Screen Ratio * Camera's Size
+
     private Bounds m_PreviousLevelBounds;
 
     private EnemyAmbushZoneScript m_AmbushZone;
@@ -57,9 +60,13 @@ public class EnemyAmbushZoneLock : MonoBehaviour
 
         // Calculate & Set LevelBounds
         Vector2 screenBounds = m_MainCamera.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
-        Vector2 screenOrigin = m_MainCamera.ScreenToWorldPoint(Vector2.zero);
+        Vector2 screenOrigin = m_MainCamera.ScreenToWorldPoint(transform.position);
+        Vector2 camBoundsWorld = m_MainCamera.ScreenToWorldPoint(new Vector2(m_MainCamera.scaledPixelWidth, m_MainCamera.scaledPixelHeight));
         m_PreviousLevelBounds = m_LevelManager.LevelBounds;
-        m_LevelManager.LevelBounds = new(transform.position, new Vector3(Mathf.Abs(screenOrigin.x) + Mathf.Abs(screenBounds.x), Mathf.Abs(screenOrigin.y) + Mathf.Abs(screenBounds.y), m_PreviousLevelBounds.size.z));
+        m_LevelManager.LevelBounds = new Bounds(transform.position,
+                                                new Vector3(CAMERABOUNDS_WORLD.x * 2f,
+                                                            CAMERABOUNDS_WORLD.y * 2f,
+                                                            m_PreviousLevelBounds.size.z));
 
         // Lock Camera
         m_CinemachineCamera.StopFollowing();

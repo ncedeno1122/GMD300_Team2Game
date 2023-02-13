@@ -41,7 +41,7 @@ public class EnemyWave
     private EnemyAmbushZoneOnDeath CreateWaveEnemy()
     {
         // TODO: Choose Random Enemy Type
-        EnemyAmbushZoneOnDeath waveEnemy = Object.Instantiate(m_WaveController.EnemyTypes[0]);
+        EnemyAmbushZoneOnDeath waveEnemy = Object.Instantiate(m_WaveController.EnemyTypes[Random.Range(0, m_WaveController.EnemyTypes.Count)]);
         waveEnemy.TrySetWaveController(m_WaveController);
         m_LivingWaveEnemies.Add(waveEnemy);
         return waveEnemy;
