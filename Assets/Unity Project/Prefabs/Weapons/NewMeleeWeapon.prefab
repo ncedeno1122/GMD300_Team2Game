@@ -144,7 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8448
   MinDamageCaused: 10
-  MaxDamageCaused: 0
+  MaxDamageCaused: 10
   Knockback: 0
   KnockbackForce: {x: 10, y: 2}
   InvincibilityDuration: 0.5
