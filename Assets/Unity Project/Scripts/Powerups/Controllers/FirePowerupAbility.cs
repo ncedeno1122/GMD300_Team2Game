@@ -34,6 +34,7 @@ public class FirePowerupAbility : CharacterAbility
     public LayerMask TargetLayerMask;
 
     // DamageArea
+    [SerializeField, SerializeReference]
     private GameObject _damageArea;
     private BoxCollider2D _boxCollider2D;
     private DamageOnTouch _damageOnTouch;
@@ -45,6 +46,8 @@ public class FirePowerupAbility : CharacterAbility
     private bool _killEventSent = false;
     private bool _eventsRegistered = false;
     private Coroutine _meleeWeaponAttack;
+
+    public TypedDamage FireDamageReference; // TODO: This feels ugly...
 
     [SerializeField]
     private float _minDamageCaused = 25f;
@@ -64,7 +67,10 @@ public class FirePowerupAbility : CharacterAbility
         if (_damageArea == null)
         {
             CreateDamageArea();
+            DisableDamageArea();
         }
+
+        // TODO: Set Owner like in MeleeWeapon?
     }
 
     /// <summary>
@@ -84,7 +90,7 @@ public class FirePowerupAbility : CharacterAbility
         // on our main stick/direction pad/keyboard
         if (_inputManager.PrimaryMovement.y < -_inputManager.Threshold.y)
         {
-            DoSomething();
+            DoSomething();   
         }
     }
 
@@ -133,7 +139,7 @@ public class FirePowerupAbility : CharacterAbility
     /// </summary>
     protected virtual void CreateDamageArea()
     {
-        MMDebug.DebugLogTime("Creating Damage Area!");
+        //MMDebug.DebugLogTime("Creating Damage Area!");
 
         // TODO: Cache this somewhere? Could be expensive... Hmm.
         _damageArea = new GameObject();
@@ -153,6 +159,7 @@ public class FirePowerupAbility : CharacterAbility
         Rigidbody2D rigidBody = _damageArea.AddComponent<Rigidbody2D>();
         rigidBody.isKinematic = true;
 
+        // Add DamageOnTouch
         _damageOnTouch = _damageArea.AddComponent<DamageOnTouch>();
         _damageOnTouch.TargetLayerMask = TargetLayerMask;
         _damageOnTouch.MinDamageCaused = MinDamageCaused;
@@ -161,6 +168,16 @@ public class FirePowerupAbility : CharacterAbility
         _damageOnTouch.DamageCausedKnockbackType = DamageOnTouch.KnockbackStyles.NoKnockback;
         _damageOnTouch.DamageCausedKnockbackForce = Vector2.zero;
         _damageOnTouch.InvincibilityDuration = 0.1f;
+        _damageOnTouch.TypedDamages = new List<TypedDamage>()
+        {
+            new TypedDamage() // Add Fire Typed Damage
+            {
+                AssociatedDamageType = FireDamageReference.AssociatedDamageType,
+                MinDamageCaused = 25f,
+                MaxDamageCaused = 25f
+            }
+        };  
+
     }
 
     // + + + + | Functions | + + + + 
@@ -174,6 +191,24 @@ public class FirePowerupAbility : CharacterAbility
     protected IEnumerator PerformAbility()
     {
         _IsAbilityInProgress = true;
+
+
+        _character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
+        _character.ConditionState.ChangeState(CharacterStates.CharacterConditions.ControlledMovement);
+
+       // Halt the character
+        CharacterHorizontalMovement chm = _character.FindAbility<CharacterHorizontalMovement>();
+        if (chm)
+        {
+            chm.ReadInput = false;
+            chm.ResetHorizontalSpeed();
+            chm.MovementForbidden = true;
+            chm.WalkSpeed = 0f;
+        }
+        else
+        {
+            MMDebug.DebugLogTime($"{GetType().Name} - Couldn't find CharacterHorizontalMovement?");
+        }
 
         // Wait for initial delay
         yield return new WaitForSeconds(Anim_InitialDelay);
@@ -196,6 +231,16 @@ public class FirePowerupAbility : CharacterAbility
         // Wait for recovery time
         yield return new WaitForSeconds(Anim_RecoveryTime);
         _IsAbilityInProgress = false;
+        _character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
+        _character.ConditionState.ChangeState(CharacterStates.CharacterConditions.Normal);
+
+        if (chm)
+        {
+            chm.ReadInput = true;
+            chm.ResetHorizontalSpeed();
+            chm.MovementForbidden = false;
+            chm.WalkSpeed = 6f;
+        }
     }
 
     /// <summary>
