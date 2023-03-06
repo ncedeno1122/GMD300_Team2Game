@@ -1,0 +1,1751 @@
+fileFormatVersion: 2
+guid: c82e6b2843a3d4f48afbe1b35ef12b47
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1158
+        width: 46
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bb00a7b3530b9409e9a07c42d09238
+      internalID: -1000020714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 1163
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d57288957aa2d04fa57091bff72fc09
+      internalID: -1161003670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 1162
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec5606bd93917d43b84e1cbed44961e
+      internalID: 675429497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 197
+        width: 773
+        height: 938
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9b9863ab3c8b44d91adb5ac04e983b
+      internalID: 2029260399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1130
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becb380e847079c44871c32e219de302
+      internalID: -1131201951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 1128
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebd018f91bea134b9b243b87f48575e
+      internalID: -1474923250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1133
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da69f23834d7584c9dde7496c08981d
+      internalID: -310865588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 1131
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393fb264476d3464186c591b66a37977
+      internalID: 359937032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1134
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496d3af8ae2673341a1efd04412d458a
+      internalID: 757285215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 1122
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9f33ba120894a4f9f05af6975db554
+      internalID: -832198664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 1125
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c8ed4c7ca0a64489c6d03188e59ba6
+      internalID: 16381475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 1125
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ef5b71832bc714884a327278ee1094
+      internalID: -2075174384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 1128
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20957f63644fde347a3e52c115add84f
+      internalID: 1310534750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 1127
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16db45f7b0527fa409b3108f1705acef
+      internalID: -2107583017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 1127
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850aaca2e5009c543bad0b53f5fb65c8
+      internalID: 960657254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1092
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7adef851dcbe848b7d28ccf66f3b5c
+      internalID: 72319447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 1092
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604f1e9e78c404b47bb8ea8c7063beb7
+      internalID: 353669149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2147
+        y: 1096
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa1ba6684b7d2a4e86d124df48ddea2
+      internalID: -1257942798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1094
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f00fa0305d12354b8f0c1d0e4597a27
+      internalID: -1878848516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 1093
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f75b4db9912edc4c8cf38182d06bffe
+      internalID: -1946337110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 1095
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de85110aeb20d31469db08aebc16b549
+      internalID: 613237874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 1089
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88cce82a9f0a964e82f314c99a688c4
+      internalID: -1186953764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 1089
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafa842673c09ea47a6d3f33ce1ac359
+      internalID: 1127250222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 1089
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85190d65f2dc694eafb016c872d059a
+      internalID: 1767476578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1091
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689765ea571e39c44b0ebb2aedd33323
+      internalID: 1925653393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 1074
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d8c33aa6c615b4cb259cd75025c1ef
+      internalID: -1357911542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1067
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3631c3e3aae544844872fdab2f5f71a0
+      internalID: 145495707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 115
+        width: 809
+        height: 957
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85491250173c5e4b8ab710eba22cbfa
+      internalID: 812797587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1812
+        y: 1036
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad355887ec2349e46945155f97ae99b3
+      internalID: -277067253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1038
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d513a57ce5eda4d8b39dde10cb337c
+      internalID: 1875478569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 1035
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a416830dccd4e2543aecf3ebff1b2235
+      internalID: -1658246034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 1027
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf6c4db473f52d448367bc5b224d555
+      internalID: 943087511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 1030
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945f1ccd057d56a459645803820a2f07
+      internalID: -1915486324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1006
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8329ca6205aa9b46ad7e79e8a406d65
+      internalID: -1427103992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 977
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88381f438f67a0d459214041ca18b436
+      internalID: 63218093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 1004
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e164aa636e0424f98cc5e8478a1869
+      internalID: 1504752487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2758
+        y: 994
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a738cab8fe4243247981729ff0a5dca9
+      internalID: -184834215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 2778
+        y: 997
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03dda75a9cd5bbe4bb0d7e8ff408929d
+      internalID: -1514556023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 975
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e52b384bb9c40a4584143839f060ade
+      internalID: 1830934699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 977
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b95876c503fbf2478bebf4956025652
+      internalID: 1685794045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 989
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061b11ce3407aea4db5a430f3b2a475c
+      internalID: 1275247489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 988
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2c22de651f9ee4483ea1c81816fd8c
+      internalID: 882077727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 964
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b0d54de9d00bb4c8444eb08eeea444
+      internalID: 445904530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 971
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43808500c97cfde448409e04a5b5ba65
+      internalID: -452219658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 930
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e378aebf6f671d549a0b8539e212adcc
+      internalID: 914855499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 946
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9c7b873015c9b418aec6ce9895e921
+      internalID: -1202897884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 932
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601694c55b2af3944b3cfacf03f556c7
+      internalID: -1794734401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 930
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b80eabcd4bff904c815272991d6dac3
+      internalID: 1797426440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 44
+        width: 717
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96f944c417fd574c806bf845bab3f01
+      internalID: 399294430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 773
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47873b4932185fc4b85bfadd25ed5e74
+      internalID: 1766465922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 44
+        width: 805
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc7fdbeb8a507c4b897b93f571688e0
+      internalID: -1382087754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 721
+        width: 41
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd06c5e147e793a4b87a0a1b711f5138
+      internalID: 682875328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 601
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81686907f17215e4b9f4ee08f1fcf49f
+      internalID: -1372253825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2773
+        y: 540
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d2db912d9a8174ab3386e6df55d1ea
+      internalID: -910894287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 506
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af45980287614d54ca185a9dbcb0e3d1
+      internalID: -2061707299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 471
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fce10229f7a884bbcdc058a54fcc3f
+      internalID: -1110133149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2682
+        y: 440
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f60e5c13ef5cd45b430e054c673b12
+      internalID: 1719345023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 412
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09805cd5129c6434b824bba96d3c3baa
+      internalID: 763680488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 404
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cb6eaa095eed94096ef93d55039e5a
+      internalID: -579671308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 377
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48724dfbe198144469e66126f992274b
+      internalID: 449441339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 339
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd343900a35e2a44a3d73754eb24c28
+      internalID: -1990014446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 306
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405351e5d34cd7a4bb959864c8d0ac00
+      internalID: -453337990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 289
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3d4cf1d1fb7b040820c739737de8c8
+      internalID: -143667118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 271
+        width: 8
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc06e257619586e488eb97235ac5727b
+      internalID: -234484070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2657
+        y: 266
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3bb634de8aa5f4a8fc0db762531cf8
+      internalID: 463080339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 245
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959d45ca9e8fc224990647b9b975ecb6
+      internalID: 2135720762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 194
+        width: 7
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91786a8d2d61324e8ae0dca9f4a94a7
+      internalID: -809606498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 150
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c7611411fb4b9479eeafde1c6a851a
+      internalID: -1130045019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 166
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7851af1cb81019488c1113499d30cca
+      internalID: -508358069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 62
+        width: 5
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9103b35f7e7aa40b7362ba093a9d7d
+      internalID: -2077342150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 44
+        width: 73
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85b04e5972101a47809c3b7347083da
+      internalID: 1846618541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 45
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51924fe39cab9a4cb2792df43fa724f
+      internalID: 2071601981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 44
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf102c8cc5adc124d8ade4b121f1f12d
+      internalID: 151908752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chararcter Jump Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 44
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dec958f2de7dc48861a00315b81688
+      internalID: 1113760525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Chararcter Jump Sprite Sheet_22: 1127250222
+      Chararcter Jump Sprite Sheet_21: -1186953764
+      Chararcter Jump Sprite Sheet_27: 812797587
+      Chararcter Jump Sprite Sheet_12: 1310534750
+      Chararcter Jump Sprite Sheet_6: -310865588
+      Chararcter Jump Sprite Sheet_14: 960657254
+      Chararcter Jump Sprite Sheet_34: 63218093
+      Chararcter Jump Sprite Sheet_49: 1766465922
+      Chararcter Jump Sprite Sheet_24: 1925653393
+      Chararcter Jump Sprite Sheet_20: 613237874
+      Chararcter Jump Sprite Sheet_39: 1685794045
+      Chararcter Jump Sprite Sheet_48: 399294430
+      Chararcter Jump Sprite Sheet_29: 1875478569
+      Chararcter Jump Sprite Sheet_38: 1830934699
+      Chararcter Jump Sprite Sheet_42: 445904530
+      Chararcter Jump Sprite Sheet_70: 1846618541
+      Chararcter Jump Sprite Sheet_11: -2075174384
+      Chararcter Jump Sprite Sheet_26: 145495707
+      Chararcter Jump Sprite Sheet_58: -579671308
+      Chararcter Jump Sprite Sheet_37: -1514556023
+      Chararcter Jump Sprite Sheet_41: 882077727
+      Chararcter Jump Sprite Sheet_23: 1767476578
+      Chararcter Jump Sprite Sheet_71: 2071601981
+      Chararcter Jump Sprite Sheet_64: 463080339
+      Chararcter Jump Sprite Sheet_68: -508358069
+      Chararcter Jump Sprite Sheet_7: 359937032
+      Chararcter Jump Sprite Sheet_47: 1797426440
+      Chararcter Jump Sprite Sheet_32: -1915486324
+      Chararcter Jump Sprite Sheet_3: 2029260399
+      Chararcter Jump Sprite Sheet_15: 72319447
+      Chararcter Jump Sprite Sheet_18: -1878848516
+      Chararcter Jump Sprite Sheet_5: -1474923250
+      Chararcter Jump Sprite Sheet_57: 763680488
+      Chararcter Jump Sprite Sheet_65: 2135720762
+      Chararcter Jump Sprite Sheet_53: -910894287
+      Chararcter Jump Sprite Sheet_8: 757285215
+      Chararcter Jump Sprite Sheet_62: -143667118
+      Chararcter Jump Sprite Sheet_40: 1275247489
+      Chararcter Jump Sprite Sheet_51: 682875328
+      Chararcter Jump Sprite Sheet_44: 914855499
+      Chararcter Jump Sprite Sheet_2: 675429497
+      Chararcter Jump Sprite Sheet_13: -2107583017
+      Chararcter Jump Sprite Sheet_10: 16381475
+      Chararcter Jump Sprite Sheet_25: -1357911542
+      Chararcter Jump Sprite Sheet_33: -1427103992
+      Chararcter Jump Sprite Sheet_46: -1794734401
+      Chararcter Jump Sprite Sheet_4: -1131201951
+      Chararcter Jump Sprite Sheet_56: 1719345023
+      Chararcter Jump Sprite Sheet_1: -1161003670
+      Chararcter Jump Sprite Sheet_9: -832198664
+      Chararcter Jump Sprite Sheet_17: -1257942798
+      Chararcter Jump Sprite Sheet_35: 1504752487
+      Chararcter Jump Sprite Sheet_19: -1946337110
+      Chararcter Jump Sprite Sheet_59: 449441339
+      Chararcter Jump Sprite Sheet_66: -809606498
+      Chararcter Jump Sprite Sheet_54: -2061707299
+      Chararcter Jump Sprite Sheet_28: -277067253
+      Chararcter Jump Sprite Sheet_45: -1202897884
+      Chararcter Jump Sprite Sheet_60: -1990014446
+      Chararcter Jump Sprite Sheet_61: -453337990
+      Chararcter Jump Sprite Sheet_69: -2077342150
+      Chararcter Jump Sprite Sheet_16: 353669149
+      Chararcter Jump Sprite Sheet_52: -1372253825
+      Chararcter Jump Sprite Sheet_73: 1113760525
+      Chararcter Jump Sprite Sheet_67: -1130045019
+      Chararcter Jump Sprite Sheet_63: -234484070
+      Chararcter Jump Sprite Sheet_72: 151908752
+      Chararcter Jump Sprite Sheet_36: -184834215
+      Chararcter Jump Sprite Sheet_31: 943087511
+      Chararcter Jump Sprite Sheet_55: -1110133149
+      Chararcter Jump Sprite Sheet_0: -1000020714
+      Chararcter Jump Sprite Sheet_30: -1658246034
+      Chararcter Jump Sprite Sheet_43: -452219658
+      Chararcter Jump Sprite Sheet_50: -1382087754
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
