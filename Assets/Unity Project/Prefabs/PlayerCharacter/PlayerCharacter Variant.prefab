@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: NumberOfJumps
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11485350, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+      propertyPath: DirectionOnSpawn
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 19839500, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
       propertyPath: InitialModule.startRotationX.minMaxState
       value: 3
@@ -77,24 +81,45 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4213818448148265750, guid: 40c2c63760d74bc4baf432ab8a540565,
         type: 3}
+    - target: {fileID: 5900331877185321214, guid: eaa0c32df7aae4121befb930bd401b9a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900331877185321214, guid: eaa0c32df7aae4121befb930bd401b9a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5900331877185321214, guid: eaa0c32df7aae4121befb930bd401b9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 6226461386725141303, guid: eaa0c32df7aae4121befb930bd401b9a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.38679248
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6226461386725141303, guid: eaa0c32df7aae4121befb930bd401b9a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6226461386725141303, guid: eaa0c32df7aae4121befb930bd401b9a,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.2655078
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7798527774007179782, guid: eaa0c32df7aae4121befb930bd401b9a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4a013b2778de2ed48a44f948a04e875a, type: 2}
     m_RemovedComponents:
     - {fileID: 11462046, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
     - {fileID: 11463706, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
+    - {fileID: 114000010795265024, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eaa0c32df7aae4121befb930bd401b9a, type: 3}
 --- !u!1 &2247589741469979294 stripped
 GameObject:
@@ -135,15 +160,15 @@ MonoBehaviour:
   AbilityStartFeedbacks: {fileID: 0}
   AbilityStopFeedbacks: {fileID: 0}
   AbilityPermitted: 1
-  BlockingMovementStates: 
+  BlockingMovementStates: 0300000009000000
   BlockingConditionStates: 
   BlockingWeaponStates: 
   RollDuration: 0.4
   RollSpeed: 2
-  BlockHorizontalInput: 0
+  BlockHorizontalInput: 1
   PreventDamageCollisionsDuringRoll: 0
   Aim:
-    AimControl: 2
+    AimControl: 1
     RotationMode: 0
     MinimumAngle: -180
     MaximumAngle: 180
@@ -156,3 +181,134 @@ MonoBehaviour:
   SuccessiveRollsLeft: 1
   SuccessiveRollsResetDuration: 2
   AbilityCost: 35
+--- !u!114 &2247589740803265693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589741469979294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d256a86958c1b468f3b6dcfcfd27a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  InitialWeapon: {fileID: 4213818448148265750, guid: 40c2c63760d74bc4baf432ab8a540565,
+    type: 3}
+  CanPickupWeapons: 1
+  WeaponAttachment: {fileID: 0}
+  ForceWeaponScaleResetOnEquip: 0
+  ForceWeaponRotationResetOnEquip: 0
+  AutomaticallyBindAnimator: 1
+  AmmoDisplayID: 0
+  ContinuousPress: 0
+  GettingHitInterruptsAttack: 0
+  CanShootFromLadders: 0
+  FaceWeaponDirection: 0
+  InvertHorizontalAimWhenWallclinging: 0
+  BufferInput: 0
+  NewInputExtendsBuffer: 0
+  MaximumBufferDuration: 0.25
+  CurrentWeapon: {fileID: 0}
+  AbilityCost: 30
+--- !u!114 &1284527433156516076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589741469979294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8dc456dab81404a9ccf0ae1f2cb273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 0100000002000000040000000500000006000000
+  BlockingConditionStates: 
+  BlockingWeaponStates: 0100000003000000
+  DashDistance: 1
+  DashForce: 30
+  ResetForcesOnExit: 0
+  ForceExactDistance: 0
+  Aim:
+    AimControl: 1
+    RotationMode: 1
+    MinimumAngle: -180
+    MaximumAngle: 180
+    CurrentAngle: 0
+  MinimumInputThreshold: 0.1
+  FlipCharacterIfNeeded: 1
+  AutoCorrectTrajectory: 1
+  DashDirectionMinThreshold: 0.1
+  DashCooldown: 1
+  LimitedDashes: 0
+  SuccessiveDashAmount: 1
+  SuccessiveDashesLeft: 1
+  SuccessiveDashResetMethod: 0
+  SuccessiveDashResetDuration: 2
+  InvincibleWhileDashing: 0
+  AbilityCost: 40
+--- !u!114 &2247589740803265695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589741469979294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d9a7c9b993f1d4db697db7e9086785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AbilityStartFeedbacks: {fileID: 0}
+  AbilityStopFeedbacks: {fileID: 0}
+  AbilityPermitted: 1
+  BlockingMovementStates: 
+  BlockingConditionStates: 
+  BlockingWeaponStates: 
+  Anim_InitialDelay: 0.5
+  Anim_CastTime: 1
+  Anim_RecoveryTime: 0.5
+  HitBoxDimensions_Start: {x: 0.5, y: 0.5}
+  HitboxDimensions_End: {x: 5, y: 3}
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 1321216
+  _damageArea: {fileID: 0}
+  FireDamageReference:
+    AssociatedDamageType: {fileID: 11400000, guid: 8b59dee4f9f0d7349a50c4d250971854,
+      type: 2}
+    MinDamageCaused: 25
+    MaxDamageCaused: 25
+    ForceCharacterCondition: 0
+    ForcedCondition: 0
+    DisableGravity: 0
+    ResetControllerForces: 0
+    ForcedConditionDuration: 3
+    ApplyMovementMultiplier: 0
+    MovementMultiplier: 0.5
+    MovementMultiplierDuration: 2
+  _minDamageCaused: 25
+  _maxDamageCaused: 25
+--- !u!114 &2247589740803265721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2247589741469979294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193f93c016a32ca40a5e308a0b32de5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CurrentPowerup: 0
