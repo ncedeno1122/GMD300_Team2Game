@@ -42,19 +42,24 @@ public class LevelEndPanelController : MonoBehaviour
 
     private void HandleOpen()
     {
+        MMDebug.DebugLogTime($"{this.GetType().Name} - Handling Opening the LevelEndUI!");
+
         // 1. Fade out PlayerGUI, show blackscreen
         PlayerGUIManager.SetHUDActive(false);
         BlackScreenFader.ActiveAlpha = 1f;
         MMFadeInEvent.Trigger(0.5f, BlackScreenFader.DefaultTween, id: BlackScreenFader.ID, true, worldPosition: Vector3.zero);
 
         // 2. Fade in this LevelEndUI
-        StopCoroutine(FadeLevelEndUICRT);
+        
+        if (FadeLevelEndUICRT != null) StopCoroutine(FadeLevelEndUICRT);
         FadeLevelEndUICRT = FadeLevelEndUI(false, FadeTimeSeconds);
         StartCoroutine(FadeLevelEndUICRT);
     }
     private void HandleClose()
     {
-        StopCoroutine(FadeLevelEndUICRT);
+        MMDebug.DebugLogTime($"{this.GetType().Name} - Handling Closing the LevelEndUI!");
+
+        if (FadeLevelEndUICRT != null) StopCoroutine(FadeLevelEndUICRT);
         FadeLevelEndUICRT = FadeLevelEndUI(true, FadeTimeSeconds);
         StartCoroutine(FadeLevelEndUICRT);
     }
