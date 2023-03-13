@@ -56,6 +56,9 @@ public class FirePowerupAbility : CharacterAbility
     private float _maxDamageCaused = 25f;
     public float MaxDamageCaused { get => _maxDamageCaused; }
 
+    // Particles
+    public ParticleSystem Particle;
+
     /// <summary>
     /// Here you should initialize our parameters
     /// </summary>
@@ -213,6 +216,7 @@ public class FirePowerupAbility : CharacterAbility
         // Wait for initial delay
         yield return new WaitForSeconds(Anim_InitialDelay);
         EnableDamageArea();
+        Particle.Play();
 
         // Work With hitboxes
         float deltaTimeHelper = 0f;
