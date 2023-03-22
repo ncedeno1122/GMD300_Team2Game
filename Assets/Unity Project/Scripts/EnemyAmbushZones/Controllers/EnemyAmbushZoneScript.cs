@@ -21,7 +21,7 @@ public class EnemyAmbushZoneScript : MonoBehaviour
     private EnemyWaveController m_WaveController;
     public LevelManager LevelManager;
 
-    private void Awake()
+    private void Start()
     {
         m_Lock = GetComponent<EnemyAmbushZoneLock>();
         m_WaveController = GetComponent<EnemyWaveController>();

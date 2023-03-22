@@ -19,7 +19,7 @@ public class EnemyAmbushZoneLock : MonoBehaviour
 
     public bool LockIsActive { get => m_LockIsActive; }
 
-    public const float LOCK_CAMERA_DISTANCE = 2f;
+    public const float LOCK_CAMERA_DISTANCE = 3f;
 
     // TODO: maybe just make const floats, lol?
     public Vector2 CAMERABOUNDS_WORLD { get => new Vector2((80f / 9f), 5f); }// Hardcoded Value for the Screen Ratio * Camera's Size
@@ -28,21 +28,18 @@ public class EnemyAmbushZoneLock : MonoBehaviour
 
     private EnemyAmbushZoneScript m_AmbushZone;
     private GameObject m_PlayerGO;
-    private GameObject m_CameraGO;
+    [SerializeField] private GameObject m_CameraGO;
     private GameObject m_CameraStackGO;
     private Camera m_MainCamera;
     private CinemachineCameraController m_CinemachineCamera;
     private LevelManager m_LevelManager;
 
-    private void Awake()
+    private void Start()
     {
         m_AmbushZone = GetComponent<EnemyAmbushZoneScript>();
         m_LevelManager = m_AmbushZone.LevelManager;
         m_PreviousLevelBounds = m_LevelManager.LevelBounds;
-    }
 
-    private void Start()
-    {
         m_MainCamera = Camera.main;
         m_CameraGO = m_MainCamera.gameObject;
         m_CameraStackGO = m_MainCamera.transform.parent.gameObject;
@@ -123,8 +120,10 @@ public class EnemyAmbushZoneLock : MonoBehaviour
         // Check for camera position
         Vector2 camPosition = new Vector2(m_CameraGO.transform.position.x, m_CameraGO.transform.position.y);
         Vector2 thisPosition = new Vector2(transform.position.x, transform.position.y);
+        Debug.Log(Vector2.Distance(camPosition, thisPosition));
         if (Vector2.Distance(camPosition, thisPosition) <= LOCK_CAMERA_DISTANCE)
         {
+            Debug.Log("Locking!");
             ActivateLock();
         }
     }
