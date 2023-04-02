@@ -118,10 +118,20 @@ public class EnemyAmbushZoneLock : MonoBehaviour
         if (!m_PlayerInZone) return; // We don't care if the player isn't in the zone
 
         // Check for camera position
-        Vector2 camPosition = new Vector2(m_CameraGO.transform.position.x, m_CameraGO.transform.position.y);
-        Vector2 thisPosition = new Vector2(transform.position.x, transform.position.y);
-        Debug.Log(Vector2.Distance(camPosition, thisPosition));
-        if (Vector2.Distance(camPosition, thisPosition) <= LOCK_CAMERA_DISTANCE)
+        //Vector2 camPosition = new Vector2(m_CameraGO.transform.position.x, m_CameraGO.transform.position.y);
+        //Vector2 thisPosition = new Vector2(transform.position.x, transform.position.y);
+        //Debug.Log(Vector2.Distance(camPosition, thisPosition));
+        //if (Vector2.Distance(camPosition, thisPosition) <= LOCK_CAMERA_DISTANCE)
+        //{
+        //    Debug.Log("Locking!");
+        //    ActivateLock();
+        //}
+
+        // Check for Player Position instead!
+        Vector2 playerPosition = m_PlayerGO.transform.position;
+        Vector2 thisPosition = transform.position;
+        //Debug.Log(Vector2.Distance(playerPosition, thisPosition));
+        if (Vector2.Distance(playerPosition, thisPosition) <= LOCK_CAMERA_DISTANCE)
         {
             Debug.Log("Locking!");
             ActivateLock();
