@@ -16,6 +16,7 @@ public class LevelEndPanelController : MonoBehaviour
 
     // TODO: Should this script REALLY manhandle the GUIManager & MMFader?
     private CanvasGroup m_CanvasGroup;
+    private GameObject m_ButtonPanel;
     public MMFader BlackScreenFader;
     public GUIManager PlayerGUIManager;
 
@@ -24,6 +25,11 @@ public class LevelEndPanelController : MonoBehaviour
     public void Start()
     {
         m_CanvasGroup = GetComponent<CanvasGroup>();
+        m_ButtonPanel = transform.Find("ButtonPanel").gameObject;
+
+        // Initialize
+        m_CanvasGroup.alpha = 0f;
+        m_ButtonPanel.SetActive(false);
     }
 
     // + + + + | Functions | + + + + 
@@ -55,6 +61,7 @@ public class LevelEndPanelController : MonoBehaviour
         if (FadeLevelEndUICRT != null) StopCoroutine(FadeLevelEndUICRT);
         FadeLevelEndUICRT = FadeLevelEndUI(false, FadeTimeSeconds);
         StartCoroutine(FadeLevelEndUICRT);
+        m_ButtonPanel.SetActive(true);
     }
     private void HandleClose()
     {
@@ -63,6 +70,7 @@ public class LevelEndPanelController : MonoBehaviour
         if (FadeLevelEndUICRT != null) StopCoroutine(FadeLevelEndUICRT);
         FadeLevelEndUICRT = FadeLevelEndUI(true, FadeTimeSeconds);
         StartCoroutine(FadeLevelEndUICRT);
+        m_ButtonPanel.SetActive(false);
     }
 
     /// <summary>

@@ -25,7 +25,8 @@ public class PowerupController : MonoBehaviour
         m_InputManager = m_Character.LinkedInputManager;
         m_FirePowerupAbility = GetComponent<FirePowerupAbility>();
 
-        TryAddPowerup(Powerup.FIRESPELL);
+        // Debug ONLY
+        //TryAddPowerup(Powerup.FIRESPELL);
 
         // Delegates
         m_InputManager.SecondaryShootButton.ButtonDownMethod += UsePowerup;

@@ -93,7 +93,7 @@ public class FirePowerupAbility : CharacterAbility
         // on our main stick/direction pad/keyboard
         if (_inputManager.PrimaryMovement.y < -_inputManager.Threshold.y)
         {
-            DoSomething();   
+            //DoSomething();   
         }
     }
 
@@ -199,19 +199,19 @@ public class FirePowerupAbility : CharacterAbility
         _character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
         _character.ConditionState.ChangeState(CharacterStates.CharacterConditions.ControlledMovement);
 
-       // Halt the character
-        CharacterHorizontalMovement chm = _character.FindAbility<CharacterHorizontalMovement>();
-        if (chm)
-        {
-            chm.ReadInput = false;
-            chm.ResetHorizontalSpeed();
-            chm.MovementForbidden = true;
-            chm.WalkSpeed = 0f;
-        }
-        else
-        {
-            MMDebug.DebugLogTime($"{GetType().Name} - Couldn't find CharacterHorizontalMovement?");
-        }
+        // Halt the character
+        //CharacterHorizontalMovement chm = _character.FindAbility<CharacterHorizontalMovement>();
+        //if (chm)
+        //{
+        //    chm.ReadInput = false;
+        //    chm.ResetHorizontalSpeed();
+        //    chm.MovementForbidden = true;
+        //    chm.WalkSpeed = 0f;
+        //}
+        //else
+        //{
+        //    MMDebug.DebugLogTime($"{GetType().Name} - Couldn't find CharacterHorizontalMovement?");
+        //}
 
         // Wait for initial delay
         yield return new WaitForSeconds(Anim_InitialDelay);
@@ -238,13 +238,13 @@ public class FirePowerupAbility : CharacterAbility
         _character.MovementState.ChangeState(CharacterStates.MovementStates.Idle);
         _character.ConditionState.ChangeState(CharacterStates.CharacterConditions.Normal);
 
-        if (chm)
-        {
-            chm.ReadInput = true;
-            chm.ResetHorizontalSpeed();
-            chm.MovementForbidden = false;
-            chm.WalkSpeed = 6f;
-        }
+        //if (chm)
+        //{
+        //    chm.ReadInput = true;
+        //    chm.ResetHorizontalSpeed();
+        //    chm.MovementForbidden = false;
+        //    chm.WalkSpeed = 6f;
+        //}
     }
 
     /// <summary>
