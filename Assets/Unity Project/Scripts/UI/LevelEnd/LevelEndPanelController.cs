@@ -3,6 +3,7 @@ using MoreMountains.Tools;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelEndPanelController : MonoBehaviour
 {
@@ -90,6 +91,23 @@ public class LevelEndPanelController : MonoBehaviour
         m_IsOpen = !fadeOut;
     }
 
+    // + + + + | Button Functions | + + + +
 
+    public void OnNextLevelButtonPressed()
+    {
+        // TODO: Doesn't do anything for now...
+    }
 
+    public void OnReplayLevelButtonPressed()
+    {
+        // Loads this scene again, avoids using Corgi's LevelManager
+        MMDebug.DebugLogTime($"{this.GetType().Name} - Replay Level Button Pressed!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void OnMainMenuButtonPressed()
+    {
+        // Loads the main menu scene, avoids using Corgi's LevelManager
+        SceneManager.LoadScene((int)SceneIndexes.MAIN_MENU);
+    }
 }
