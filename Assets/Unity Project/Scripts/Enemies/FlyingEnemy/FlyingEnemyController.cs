@@ -22,7 +22,7 @@ public class FlyingEnemyController : MonoBehaviour
     private void Start()
     {
         Transform playerTf = m_LevelManager.SceneCharacters[0].transform;
-        ChangeState(new FlyingEnemyFollowWithOffset(this, playerTf, new Vector3(0f, 4f)));
+        ChangeState(new FlyingEnemyFollowWithOffset(this, playerTf, new Vector3(0f, 2f)));
     }
 
     private void Update()
